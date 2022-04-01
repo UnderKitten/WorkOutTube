@@ -31,12 +31,6 @@
       .center{
       margin: auto;
         width: 100%;
-        height:100%
+
         padding: 10px;
-      }
-      .vid {
-      height:auto;
-min-height:300px;
-height:auto !important;        /* for IE as it does not support min-height */
-height:700px;
       }

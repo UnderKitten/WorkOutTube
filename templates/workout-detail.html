@@ -9,13 +9,12 @@ Workout detail
     <h1>{{ workout.title }}</h1>
 
     <div class="alert alert-info">
-        <iframe class="center" width="700" height="700" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-
+        <iframe class="center" width="700" height="700" src="{{workout.url}}"></iframe>
 
         <p>{{ workout.description }}</p>
         <p><b>Date added: {{ workout.date.date() }}</b></p>
-        <a href="/posts/{{ workout.id }}/update" class="btn btn-success">Edit</a>
-        <a href="/posts/{{ workout.id }}/delete" class="btn btn-danger">Delete</a>
+        <a href="/library/{{ workout.id }}/edit" class="btn btn-success">Edit</a>
+        <a href="/library/{{ workout.id }}/remove" class="btn btn-danger">Delete</a>
     </div>
 </div>
 

@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b840507b-2c5e-4062-944f-4ffd9c886019" name="Default Changelist" comment="" />
+    <list default="true" id="1ee3384a-cdd5-40d5-a258-e3347465dc74" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/WorkOutTube.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_workout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit-workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit-workout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/workout-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/workout-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workout_list.db" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="274S4K02d3kYHdXVqFiZ6zHDHkU" />
+  <component name="ProjectId" id="27Cbp9ddpMEyTcMysjDiaUk7FOf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,26 +31,42 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Python\WorkOutTube\static\png" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="WorkOutTube" />
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="WOTube" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="WOTube" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:\Python\WOTube\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
@@ -57,45 +78,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.app" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b840507b-2c5e-4062-944f-4ffd9c886019" name="Default Changelist" comment="" />
-      <created>1648577672936</created>
+      <changelist id="1ee3384a-cdd5-40d5-a258-e3347465dc74" name="Default Changelist" comment="" />
+      <created>1648827194415</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648577672936</updated>
+      <updated>1648827194415</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1618" height="395" key="GridCell.Tab.0.bottom" timestamp="1648767870914">
+    <state x="1693" y="373" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1648828325603">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1618" height="395" key="GridCell.Tab.0.bottom/0.0.3440.1392@0.0.3440.1392" timestamp="1648767870914" />
-    <state width="1618" height="395" key="GridCell.Tab.0.center" timestamp="1648767870914">
+    <state x="1693" y="373" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1648828325603" />
+    <state x="2315" y="437" key="FileChooserDialogImpl" timestamp="1648828263936">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1618" height="395" key="GridCell.Tab.0.center/0.0.3440.1392@0.0.3440.1392" timestamp="1648767870914" />
-    <state width="1618" height="395" key="GridCell.Tab.0.left" timestamp="1648767870914">
+    <state x="2315" y="437" key="FileChooserDialogImpl/0.0.3440.1392@0.0.3440.1392" timestamp="1648828263936" />
+    <state width="1758" height="174" key="GridCell.Tab.0.bottom" timestamp="1648831125924">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1618" height="395" key="GridCell.Tab.0.left/0.0.3440.1392@0.0.3440.1392" timestamp="1648767870914" />
-    <state width="1618" height="395" key="GridCell.Tab.0.right" timestamp="1648767870914">
+    <state width="1758" height="174" key="GridCell.Tab.0.bottom/0.0.3440.1392@0.0.3440.1392" timestamp="1648831125924" />
+    <state width="1758" height="174" key="GridCell.Tab.0.center" timestamp="1648831125924">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1618" height="395" key="GridCell.Tab.0.right/0.0.3440.1392@0.0.3440.1392" timestamp="1648767870914" />
-    <state x="2315" y="519" key="com.intellij.ide.util.TipDialog" timestamp="1648768071950">
+    <state width="1758" height="174" key="GridCell.Tab.0.center/0.0.3440.1392@0.0.3440.1392" timestamp="1648831125924" />
+    <state width="1758" height="174" key="GridCell.Tab.0.left" timestamp="1648831125924">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state x="2315" y="519" key="com.intellij.ide.util.TipDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1648768071950" />
+    <state width="1758" height="174" key="GridCell.Tab.0.left/0.0.3440.1392@0.0.3440.1392" timestamp="1648831125924" />
+    <state width="1758" height="174" key="GridCell.Tab.0.right" timestamp="1648831125924">
+      <screen x="0" y="0" width="3440" height="1392" />
+    </state>
+    <state width="1758" height="174" key="GridCell.Tab.0.right/0.0.3440.1392@0.0.3440.1392" timestamp="1648831125924" />
+    <state x="2037" y="338" key="SettingsEditor" timestamp="1648828307861">
+      <screen x="0" y="0" width="3440" height="1392" />
+    </state>
+    <state x="2037" y="338" key="SettingsEditor/0.0.3440.1392@0.0.3440.1392" timestamp="1648828307861" />
+    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog" timestamp="1648827196347">
+      <screen x="0" y="0" width="3440" height="1392" />
+    </state>
+    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1648827196347" />
   </component>
 </project>
