@@ -8,25 +8,17 @@ Edit a workout
 <div class="container mt-5 col-md-6">
     <h1>Adding a workout video.</h1>
     <form method="post">
-        <input type="text" name="title" id="title" class="form-control" value="{{workout.title}}"
-               placeholder="{{ workout.title }}" required><br>
-        <textarea name="description" id="description" cols="10" rows="3" class="form-control" value="{{ workout.url }}"
-                  placeholder="{{ workout.description }}" required>{{ workout.description }}</textarea><br>
-        <label for="category">Workout category:</label>
-        <select name="category" id="category" class="form-select">
-            <option value="upper">Upper Body</option>
-            <option value="lower">Lower Body</option>
-            <option value="core">Core</option>
-            <option value="full">Full Body</option>
-        </select><br>
-        <input type="url" name="url" id="url" class="form-control" value="{{ workout.url }}" pattern="https://.*"
-               required><br>
-        <input type="number" name="duration" id="duration" class="form-control" value="{{ workout.duration }}" placeholder="Add a duration"
-               required><br>
 
 
-        <input type="submit" class="btn btn-success" value="Update">
-        <a href="/library/{{ workout.id }}/remove" class="btn btn-danger">Remove</a>
+        {{ edited_workout.title(class="form-control", placeholder="Add a title") }}<br>
+        {{ edited_workout.description(class="form-control", placeholder="Add a title", cols="10", rows="3") }}<br>
+         {{ new_workout.category.label }}<br>
+        {{edited_workout.category(class="form-select")}}<br>
+        {{ edited_workout.url(class="form-control", placeholder="Add a URL", pattern="https://.*") }}<br>
+        {{ edited_workout.duration(class="form-control", placeholder="Add a duration") }}<br>
+        {{edited_workout.update(class="btn btn-success")}}
+        {{edited_workout.remove(class="btn btn-danger", href="/library/{{edited_workout.id.data}}/remove")}}
+<!--        <a href="/library/remove" class="btn btn-danger">Remove</a>-->
 
     </form>
 </div>

@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee3384a-cdd5-40d5-a258-e3347465dc74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/WorkOutTube.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/add_workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_workout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/edit-workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit-workout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/library.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/workout-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/workout-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workout_list.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workout_list.db" beforeDir="false" afterPath="$PROJECT_DIR$/workout_list.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +62,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="PYTHONBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="E:\Python\WOTube\venv\Scripts\python.exe" />
@@ -101,29 +102,29 @@
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
     <state x="2315" y="437" key="FileChooserDialogImpl/0.0.3440.1392@0.0.3440.1392" timestamp="1648828263936" />
-    <state width="1758" height="174" key="GridCell.Tab.0.bottom" timestamp="1648831125924">
+    <state width="1769" height="518" key="GridCell.Tab.0.bottom" timestamp="1649014546457">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1758" height="174" key="GridCell.Tab.0.bottom/0.0.3440.1392@0.0.3440.1392" timestamp="1648831125924" />
-    <state width="1758" height="174" key="GridCell.Tab.0.center" timestamp="1648831125924">
+    <state width="1769" height="518" key="GridCell.Tab.0.bottom/0.0.3440.1392@0.0.3440.1392" timestamp="1649014546457" />
+    <state width="1769" height="518" key="GridCell.Tab.0.center" timestamp="1649014546457">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1758" height="174" key="GridCell.Tab.0.center/0.0.3440.1392@0.0.3440.1392" timestamp="1648831125924" />
-    <state width="1758" height="174" key="GridCell.Tab.0.left" timestamp="1648831125924">
+    <state width="1769" height="518" key="GridCell.Tab.0.center/0.0.3440.1392@0.0.3440.1392" timestamp="1649014546457" />
+    <state width="1769" height="518" key="GridCell.Tab.0.left" timestamp="1649014546457">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1758" height="174" key="GridCell.Tab.0.left/0.0.3440.1392@0.0.3440.1392" timestamp="1648831125924" />
-    <state width="1758" height="174" key="GridCell.Tab.0.right" timestamp="1648831125924">
+    <state width="1769" height="518" key="GridCell.Tab.0.left/0.0.3440.1392@0.0.3440.1392" timestamp="1649014546457" />
+    <state width="1769" height="518" key="GridCell.Tab.0.right" timestamp="1649014546457">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1758" height="174" key="GridCell.Tab.0.right/0.0.3440.1392@0.0.3440.1392" timestamp="1648831125924" />
+    <state width="1769" height="518" key="GridCell.Tab.0.right/0.0.3440.1392@0.0.3440.1392" timestamp="1649014546457" />
     <state x="2037" y="338" key="SettingsEditor" timestamp="1648828307861">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
     <state x="2037" y="338" key="SettingsEditor/0.0.3440.1392@0.0.3440.1392" timestamp="1648828307861" />
-    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog" timestamp="1648827196347">
+    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog" timestamp="1649010854142">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1648827196347" />
+    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1649010854142" />
   </component>
 </project>
