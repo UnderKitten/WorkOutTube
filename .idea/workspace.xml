@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee3384a-cdd5-40d5-a258-e3347465dc74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wotube/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wotube/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wotube/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wotube/templates/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_workout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/edit-workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit-workout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workout_list.db" beforeDir="false" afterPath="$PROJECT_DIR$/workout_list.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/png/core.png" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/static/png/core.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/png/full.png" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/static/png/full.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/png/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/static/png/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/png/lower.png" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/static/png/lower.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/png/upper.png" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/static/png/upper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/add_workout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit-workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/edit-workout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/library.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/workout-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/workout-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workout_list.db" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/workout_list.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +50,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Python\WOTube\wotube" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -70,7 +91,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,37 +115,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1693" y="373" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1648828325603">
+    <state x="1693" y="373" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1649296701028">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state x="1693" y="373" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1648828325603" />
+    <state x="1693" y="373" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1649296701028" />
     <state x="2315" y="437" key="FileChooserDialogImpl" timestamp="1648828263936">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
     <state x="2315" y="437" key="FileChooserDialogImpl/0.0.3440.1392@0.0.3440.1392" timestamp="1648828263936" />
-    <state width="1769" height="518" key="GridCell.Tab.0.bottom" timestamp="1649014546457">
+    <state width="1494" height="518" key="GridCell.Tab.0.bottom" timestamp="1649299047259">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1769" height="518" key="GridCell.Tab.0.bottom/0.0.3440.1392@0.0.3440.1392" timestamp="1649014546457" />
-    <state width="1769" height="518" key="GridCell.Tab.0.center" timestamp="1649014546457">
+    <state width="1494" height="518" key="GridCell.Tab.0.bottom/0.0.3440.1392@0.0.3440.1392" timestamp="1649299047259" />
+    <state width="1494" height="518" key="GridCell.Tab.0.center" timestamp="1649299047258">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1769" height="518" key="GridCell.Tab.0.center/0.0.3440.1392@0.0.3440.1392" timestamp="1649014546457" />
-    <state width="1769" height="518" key="GridCell.Tab.0.left" timestamp="1649014546457">
+    <state width="1494" height="518" key="GridCell.Tab.0.center/0.0.3440.1392@0.0.3440.1392" timestamp="1649299047258" />
+    <state width="1494" height="518" key="GridCell.Tab.0.left" timestamp="1649299047258">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1769" height="518" key="GridCell.Tab.0.left/0.0.3440.1392@0.0.3440.1392" timestamp="1649014546457" />
-    <state width="1769" height="518" key="GridCell.Tab.0.right" timestamp="1649014546457">
+    <state width="1494" height="518" key="GridCell.Tab.0.left/0.0.3440.1392@0.0.3440.1392" timestamp="1649299047258" />
+    <state width="1494" height="518" key="GridCell.Tab.0.right" timestamp="1649299047258">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1769" height="518" key="GridCell.Tab.0.right/0.0.3440.1392@0.0.3440.1392" timestamp="1649014546457" />
+    <state width="1494" height="518" key="GridCell.Tab.0.right/0.0.3440.1392@0.0.3440.1392" timestamp="1649299047258" />
     <state x="2037" y="338" key="SettingsEditor" timestamp="1648828307861">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
     <state x="2037" y="338" key="SettingsEditor/0.0.3440.1392@0.0.3440.1392" timestamp="1648828307861" />
-    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog" timestamp="1649010854142">
+    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog" timestamp="1649296976389">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1649010854142" />
+    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1649296976389" />
   </component>
 </project>

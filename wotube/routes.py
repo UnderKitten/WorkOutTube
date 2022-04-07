@@ -1,16 +1,9 @@
-from flask import Flask, request, render_template, url_for, redirect
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+from flask import request, render_template, redirect
+from wotube import app, workout_db
+from wotube.models import Workout
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, TextAreaField, URLField, SubmitField, SelectField
 from wtforms.validators import DataRequired, url, InputRequired
-import creds
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///workout_list.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-workout_db = SQLAlchemy(app)
-app.config['SECRET_KEY'] = creds.secret_key
 
 
 @app.route('/')
@@ -87,19 +80,6 @@ def convert_url_to_embed(url):
     return url
 
 
-class Workout(workout_db.Model):
-    id = workout_db.Column(workout_db.Integer, primary_key=True)
-    title = workout_db.Column(workout_db.String(50), nullable=False)
-    description = workout_db.Column(workout_db.String(300), nullable=False)
-    category = workout_db.Column(workout_db.String(10), nullable=False)
-    url = workout_db.Column(workout_db.Text, nullable=False)
-    duration = workout_db.Column(workout_db.Integer, nullable=False)
-    date = workout_db.Column(workout_db.DateTime, default=datetime.utcnow)
-
-    def __repr__(self):
-        return f'<Article {self.id}>'
-
-
 class WorkoutForm(FlaskForm):
     title = StringField("title", validators=[InputRequired()])
     description = TextAreaField("description", validators=[InputRequired()])
@@ -111,7 +91,3 @@ class WorkoutForm(FlaskForm):
     submit = SubmitField("Submit")
     update = SubmitField("Edit")
     remove = SubmitField("Remove")
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
