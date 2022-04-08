@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 wotube/creds.py
+wotube/workout_list.db
+*.db

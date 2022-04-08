@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register
+{%endblock%}
+
+{% block body %}
+<div class="container mt-5 col-md-2 ">
+    <h1>Sign up</h1>
+    <form method="POST">
+        <br>{{ form.username(class="form-control form-control-inline", placeholder="Username") }}<br>
+        {{ form.email(class="form-control form-control-inline", placeholder="Email") }}
+        {% for error in form.email.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}<br>
+        {{ form.password(class="form-control form-control-inline", placeholder="Password") }}
+        {% for error in form.password.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}<br>
+        {{ form.password2(class="form-control form-control-inline", placeholder="Repeat Password") }}
+        {% for error in form.password2.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}<br>
+        {{ form.submit(class="btn btn-success ") }}
+    </form>
+</div>
+
+{% endblock %}

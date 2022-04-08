@@ -1,9 +1,6 @@
 from flask import request, render_template, redirect
 from wotube import app, workout_db
-from wotube.models import Workout
-from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, TextAreaField, URLField, SubmitField, SelectField
-from wtforms.validators import DataRequired, url, InputRequired
+from wotube.models import Workout, WorkoutForm, RegistrationForm, User
 
 
 @app.route('/')
@@ -75,19 +72,21 @@ def remove_workout(id):
         return "Something went wrong"
 
 
+@app.route('/register', methods=['POST', 'GET'])
+def register():
+    form = RegistrationForm()
+    if request.method == "POST":
+        print('submitted')
+        user = User(username=form.username.data, email=form.email.data)
+        user.set_password(form.password.data)
+        workout_db.session.add(user)
+        workout_db.session.commit()
+        return redirect('/')
+    return render_template('register.html', form=form)
+
+
+@app.route('/login')
+
 def convert_url_to_embed(url):
     url = url.replace("watch?v=", "embed/")
     return url
-
-
-class WorkoutForm(FlaskForm):
-    title = StringField("title", validators=[InputRequired()])
-    description = TextAreaField("description", validators=[InputRequired()])
-    category = SelectField("Workout category:",
-                           choices=[('full', 'Full Body'), ('upper', 'Upper Body'), ('lower', 'Lower Body'),
-                                    ('core', 'Core')])
-    url = URLField("url", validators=[DataRequired(), url()])
-    duration = IntegerField("duration", validators=[InputRequired()])
-    submit = SubmitField("Submit")
-    update = SubmitField("Edit")
-    remove = SubmitField("Remove")

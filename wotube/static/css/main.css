@@ -34,3 +34,6 @@
 
         padding: 10px;
       }
+    .form-control-inline {
+    width: auto;
+}

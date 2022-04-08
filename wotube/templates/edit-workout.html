@@ -12,13 +12,12 @@ Edit a workout
 
         {{ edited_workout.title(class="form-control", placeholder="Add a title") }}<br>
         {{ edited_workout.description(class="form-control", placeholder="Add a title", cols="10", rows="3") }}<br>
-         {{ new_workout.category.label }}<br>
+         {{ edited_workout.category.label }}<br>
         {{edited_workout.category(class="form-select")}}<br>
         {{ edited_workout.url(class="form-control", placeholder="Add a URL", pattern="https://.*") }}<br>
         {{ edited_workout.duration(class="form-control", placeholder="Add a duration") }}<br>
         {{edited_workout.update(class="btn btn-success")}}
         {{edited_workout.remove(class="btn btn-danger", href="/library/{{edited_workout.id.data}}/remove")}}
-<!--        <a href="/library/remove" class="btn btn-danger">Remove</a>-->
 
     </form>
 </div>
