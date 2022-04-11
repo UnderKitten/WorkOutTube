@@ -1,15 +1,25 @@
-from flask import request, render_template, redirect
-from wotube import app, workout_db
-from wotube.models import Workout, WorkoutForm, RegistrationForm, User
+import email_validator
+
+from flask import request, render_template, redirect, url_for, flash
+from flask_login import login_required, login_user, current_user, logout_user
+
+from wotube import app, workout_db, login_manager
+from wotube.models import Workout, WorkoutForm, RegistrationForm, User, LoginForm
 
 
 @app.route('/')
 def index():
+    # clear_data()
     return render_template("index.html")
 
 
 @app.route('/library')
+@login_required
 def library():
+    # log_user = User.query.filter_by(username=username).first_or_404()
+    # workouts = Workout.query.filter_by(user_id=log_user.id)
+    # if workouts is None:
+    #     workouts = []
     workouts = Workout.query.all()
     return render_template("library.html", workouts=workouts)
 
@@ -21,6 +31,7 @@ def workout_detail(id):
 
 
 @app.route('/add_workout', methods=['POST', 'GET'])
+@login_required
 def add_workout():
     new_workout = WorkoutForm()
     if request.method == "POST":
@@ -74,19 +85,51 @@ def remove_workout(id):
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
+    if current_user.is_authenticated:
+        return redirect(url_for('library'))
     form = RegistrationForm()
-    if request.method == "POST":
-        print('submitted')
-        user = User(username=form.username.data, email=form.email.data)
-        user.set_password(form.password.data)
-        workout_db.session.add(user)
+    if form.validate_on_submit():
+        print("register")
+        new_user = User(username=form.username.data, email=form.email.data)
+        new_user.set_password(form.password.data)
+        workout_db.session.add(new_user)
         workout_db.session.commit()
-        return redirect('/')
+        flash('Your account has been created! You are now able to log in', 'success')
+        return redirect('/login')
     return render_template('register.html', form=form)
 
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if current_user.is_authenticated:
+        return redirect(url_for('library'))
+    form = LoginForm(request.form)
+    # if request.method == "POST":
+    if form.validate_on_submit():
+        print("validate")
+        user = User.query.filter_by(email=form.email.data).first()
+        if user and user.check_password(form.password.data):
+            login_user(user, remember=form.remember.data)
+            next_page = request.args.get('next')
+            flash('You have been logged in!', 'success')
+            return redirect(next_page) if next_page else redirect(url_for('index', _external=True))
+        else:
+            flash('Login Unsuccessful. Please check email and login', 'danger')
+    return render_template('login.html', form=form)
+
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('index', _external=True))
+
 
 def convert_url_to_embed(url):
     url = url.replace("watch?v=", "embed/")
     return url
+
+
+def clear_data():
+    workout_db.drop_all()
+    workout_db.create_all()
+    workout_db.session.commit()

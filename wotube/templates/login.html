@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login
+{%endblock%}
+
+{% block body %}
+<div class="container mt-5 col-md-2 ">
+    <h1>Login</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {% for mesg in get_flashed_messages() %}
+        <h7>{{ mesg }}</h7>
+        {% endfor %}
+        <br>{{ form.email.label }}<br>
+        {{ form.email(class="form-control form-control-inline") }}
+
+        <br>{{ form.password.label }}<br>
+        {{ form.password(class="form-control form-control-inline") }}
+
+        {{ form.remember.label }}
+        {{ form.remember() }}<br><br>
+
+        {{ form.submit(class="btn btn-success ") }}
+    </form>
+</div>
+
+{% endblock %}

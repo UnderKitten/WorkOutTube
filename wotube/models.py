@@ -1,9 +1,11 @@
 from flask_wtf import FlaskForm
-from wotube import workout_db
+
+from wotube import workout_db, login_manager
 from datetime import datetime
 from flask_login import UserMixin
-from wtforms import StringField, IntegerField, TextAreaField, URLField, SubmitField, SelectField, PasswordField
-from wtforms.validators import DataRequired, url, InputRequired, Email, EqualTo
+from wtforms import StringField, IntegerField, TextAreaField, URLField, SubmitField, SelectField, PasswordField, \
+    BooleanField
+from wtforms.validators import DataRequired, url, InputRequired, Email, EqualTo, ValidationError
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
@@ -15,6 +17,7 @@ class Workout(workout_db.Model):
     url = workout_db.Column(workout_db.Text, nullable=False)
     duration = workout_db.Column(workout_db.Integer, nullable=False)
     date = workout_db.Column(workout_db.DateTime, default=datetime.utcnow)
+    user_id = workout_db.Column(workout_db.Integer)
 
     def __repr__(self):
         return f'<Article {self.id}>'
@@ -50,9 +53,31 @@ class WorkoutForm(FlaskForm):
     remove = SubmitField("Remove")
 
 
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
+
 class RegistrationForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     password2 = PasswordField('Repeat Password', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Register')
+
+    def validate_username(self, username):
+        user = User.query.filter_by(username=username.data).first()
+        if user:
+            raise ValidationError('That username is taken. Please choose a different one.')
+
+    def validate_email(self, email):
+        user = User.query.filter_by(email=email.data).first()
+        if user:
+            raise ValidationError('That email is taken. Please choose a different one.')
+
+
+class LoginForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    remember = BooleanField('Remember Me')
+    submit = SubmitField('Login')

@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee3384a-cdd5-40d5-a258-e3347465dc74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wotube/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wotube/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wotube/templates/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wotube/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wotube/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wotube/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wotube/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wotube/templates/auth.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wotube/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wotube/templates/edit-workout.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/edit-workout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wotube/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wotube/templates/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/library.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wotube/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wotube/workout_list.db" beforeDir="false" afterPath="$PROJECT_DIR$/wotube/workout_list.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,30 +116,30 @@
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
     <state x="2315" y="437" key="FileChooserDialogImpl/0.0.3440.1392@0.0.3440.1392" timestamp="1648828263936" />
-    <state width="1494" height="518" key="GridCell.Tab.0.bottom" timestamp="1649385497334">
+    <state width="1605" height="335" key="GridCell.Tab.0.bottom" timestamp="1649634440662">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1494" height="518" key="GridCell.Tab.0.bottom/0.0.3440.1392@0.0.3440.1392" timestamp="1649385497334" />
-    <state width="1494" height="518" key="GridCell.Tab.0.center" timestamp="1649385497333">
+    <state width="1605" height="335" key="GridCell.Tab.0.bottom/0.0.3440.1392@0.0.3440.1392" timestamp="1649634440662" />
+    <state width="1605" height="335" key="GridCell.Tab.0.center" timestamp="1649634440662">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1494" height="518" key="GridCell.Tab.0.center/0.0.3440.1392@0.0.3440.1392" timestamp="1649385497333" />
-    <state width="1494" height="518" key="GridCell.Tab.0.left" timestamp="1649385497333">
+    <state width="1605" height="335" key="GridCell.Tab.0.center/0.0.3440.1392@0.0.3440.1392" timestamp="1649634440662" />
+    <state width="1605" height="335" key="GridCell.Tab.0.left" timestamp="1649634440662">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1494" height="518" key="GridCell.Tab.0.left/0.0.3440.1392@0.0.3440.1392" timestamp="1649385497333" />
-    <state width="1494" height="518" key="GridCell.Tab.0.right" timestamp="1649385497333">
+    <state width="1605" height="335" key="GridCell.Tab.0.left/0.0.3440.1392@0.0.3440.1392" timestamp="1649634440662" />
+    <state width="1605" height="335" key="GridCell.Tab.0.right" timestamp="1649634440662">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state width="1494" height="518" key="GridCell.Tab.0.right/0.0.3440.1392@0.0.3440.1392" timestamp="1649385497333" />
+    <state width="1605" height="335" key="GridCell.Tab.0.right/0.0.3440.1392@0.0.3440.1392" timestamp="1649634440662" />
     <state x="2037" y="338" key="SettingsEditor" timestamp="1648828307861">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
     <state x="2037" y="338" key="SettingsEditor/0.0.3440.1392@0.0.3440.1392" timestamp="1648828307861" />
-    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog" timestamp="1649379671522">
+    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog" timestamp="1649616461162">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
-    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1649379671522" />
+    <state x="2232" y="519" key="com.intellij.ide.util.TipDialog/0.0.3440.1392@0.0.3440.1392" timestamp="1649616461162" />
     <state x="2261" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1649377804766">
       <screen x="0" y="0" width="3440" height="1392" />
     </state>
